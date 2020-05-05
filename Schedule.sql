@@ -1,4 +1,5 @@
-127.0.0.1/test/schedule/		http://localhost:8080/phpmyadmin/tbl_sql.php?db=test&table=schedule
+127.0.0.1/test/schedule/		
+http://localhost:8080/phpmyadmin/tbl_sql.php?db=test&table=schedule
 Your SQL query has been executed successfully.
 
 SHOW CREATE TABLE schedule
