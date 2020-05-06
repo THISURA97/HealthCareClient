@@ -77,7 +77,7 @@ public class Schedule
 	 output += "<td>" + scheduleHos + "</td>";
 	 
 	 output += "<td><input  name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary'></td>"
-	 		+ "<td><input  name='btnRemove' type='button' value='Remove'class='btnRemove btn btn-danger' data-scheduleid='" +scheduleID + "'>" + "</td></tr>";  
+	 		+ "<td><input name='btnRemove' type='button' value='Remove' class='btnRemove btn btn-danger' data-scheduleid='" +scheduleID + "'>" + "</td></tr>";  
 	 }
 	 con.close();
 	 // Complete the html table
