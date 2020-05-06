@@ -75,7 +75,7 @@ function onScheduleSaveComplete(response, status)
 
 }
 //UPDATE==========================================
-$(document).on("click", "#btnUpdate", function(event)
+$(document).on("click", ".btnUpdate", function(event)
 {
  $("#hidScheduleIDSave").val($(this).closest("tr").find('#hidScheduleUpdate').val());
  $("#scheduleDate").val($(this).closest("tr").find('td:eq(1)').text());
@@ -85,13 +85,13 @@ $(document).on("click", "#btnUpdate", function(event)
  $("#scheduleHos").val($(this).closest("tr").find('td:eq(5)').text());
 });
 //remove
-$(document).on("click", "#btnRemove", function(event)
+$(document).on("click", ".btnRemove", function(event)
 		{
 		 $.ajax(
 		 {
 		 url : "ScheduleAPI",
 		 type : "DELETE",
-		 data : "scheduleID=" + $(this).data("scheduleID"),
+		 data : "scheduleID=" + $(this).data("scheduleid"),
 		 dataType : "text",
 		 complete : function(response, status)
 		 {
@@ -132,30 +132,30 @@ $(document).on("click", "#btnRemove", function(event)
 		// scheduleDate
 		if ($("#scheduleDate").val().trim() == "")
 		 {
-		 return "Insert scheduleDate.";
+		 return "Insert schedule Date.";
 		 }
 		// scheduleTime
 		if ($("#scheduleTime").val().trim() == "")
 		 {
-		 return "Insert scheduleTime.";
+		 return "Insert schedule Time";
 		 } 
 		9
 		// scheduleType-------------------------------
 		if ($("#scheduleType").val().trim() == "")
 		 {
-		 return "Insert scheduleType.";
+		 return "Insert schedule Type";
 		 }
 
 		// scheduleDoc------------------------
 		if ($("#scheduleDoc").val().trim() == "")
 		 {
-		 return "Insert scheduleDoc.";
+		 return "Insert schedule Doctor";
 		 }
 
 		//scheduleHos------------------------
 		if ($("#scheduleHos").val().trim() == "")
 		 {
-		 return "Insert scheduleHos.";
+		 return "Insert schedule Hospital";
 		 }
 		return true;
 
