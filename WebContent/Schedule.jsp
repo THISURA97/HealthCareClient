@@ -15,7 +15,7 @@
   <script src="Components/Schedule.js"></script>
 </head>
 <body>
-<form id="formSchedule" name="formSchedule">
+<form id="formSchedule" name="formSchedule" >
 <div class="container-fluid">
  scheduleDate:
 <input id="scheduleDate" name="scheduleDate" type="text"class="form-control form-control-sm" style="width: 50%"  required>
