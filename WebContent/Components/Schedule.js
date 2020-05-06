@@ -132,30 +132,30 @@ $(document).on("click", ".btnRemove", function(event)
 		// scheduleDate
 		if ($("#scheduleDate").val().trim() == "")
 		 {
-		 return "Insert schedule Date.";
+		 return "Insert scheduleDate.";
 		 }
 		// scheduleTime
 		if ($("#scheduleTime").val().trim() == "")
 		 {
-		 return "Insert schedule Time";
+		 return "Insert scheduleTime.";
 		 } 
 		9
 		// scheduleType-------------------------------
 		if ($("#scheduleType").val().trim() == "")
 		 {
-		 return "Insert schedule Type";
+		 return "Insert scheduleType.";
 		 }
 
 		// scheduleDoc------------------------
 		if ($("#scheduleDoc").val().trim() == "")
 		 {
-		 return "Insert schedule Doctor";
+		 return "Insert scheduleDoc.";
 		 }
 
 		//scheduleHos------------------------
 		if ($("#scheduleHos").val().trim() == "")
 		 {
-		 return "Insert schedule Hospital";
+		 return "Insert scheduleHos.";
 		 }
 		return true;
 
